@@ -1,0 +1,135 @@
+# Details
+
+Date : 2021-02-11 22:58:50
+
+Directory /home/zl/gem5/src/mem/cache
+
+Total : 120 files,  13267 codes, 10572 comments, 3730 blanks, all 27569 lines
+
+[summary](results.md)
+
+## Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [src/mem/cache/Cache.py](/src/mem/cache/Cache.py) | Python | 63 | 63 | 31 | 157 |
+| [src/mem/cache/base.cc](/src/mem/cache/base.cc) | C++ | 1,564 | 576 | 360 | 2,500 |
+| [src/mem/cache/base.hh](/src/mem/cache/base.hh) | C++ | 480 | 731 | 209 | 1,420 |
+| [src/mem/cache/cache.cc](/src/mem/cache/cache.cc) | C++ | 724 | 522 | 192 | 1,438 |
+| [src/mem/cache/cache.hh](/src/mem/cache/cache.hh) | C++ | 53 | 88 | 31 | 172 |
+| [src/mem/cache/cache_blk.cc](/src/mem/cache/cache_blk.cc) | C++ | 27 | 47 | 13 | 87 |
+| [src/mem/cache/cache_blk.hh](/src/mem/cache/cache_blk.hh) | C++ | 234 | 229 | 55 | 518 |
+| [src/mem/cache/compressors/Compressors.py](/src/mem/cache/compressors/Compressors.py) | Python | 104 | 27 | 30 | 161 |
+| [src/mem/cache/compressors/base.cc](/src/mem/cache/compressors/base.cc) | C++ | 157 | 52 | 39 | 248 |
+| [src/mem/cache/compressors/base.hh](/src/mem/cache/compressors/base.hh) | C++ | 61 | 153 | 39 | 253 |
+| [src/mem/cache/compressors/base_delta.cc](/src/mem/cache/compressors/base_delta.cc) | C++ | 64 | 30 | 17 | 111 |
+| [src/mem/cache/compressors/base_delta.hh](/src/mem/cache/compressors/base_delta.hh) | C++ | 124 | 55 | 30 | 209 |
+| [src/mem/cache/compressors/base_delta_impl.hh](/src/mem/cache/compressors/base_delta_impl.hh) | C++ | 52 | 39 | 16 | 107 |
+| [src/mem/cache/compressors/base_dictionary_compressor.cc](/src/mem/cache/compressors/base_dictionary_compressor.cc) | C++ | 28 | 32 | 9 | 69 |
+| [src/mem/cache/compressors/cpack.cc](/src/mem/cache/compressors/cpack.cc) | C++ | 30 | 34 | 13 | 77 |
+| [src/mem/cache/compressors/cpack.hh](/src/mem/cache/compressors/cpack.hh) | C++ | 102 | 49 | 28 | 179 |
+| [src/mem/cache/compressors/dictionary_compressor.hh](/src/mem/cache/compressors/dictionary_compressor.hh) | C++ | 369 | 292 | 81 | 742 |
+| [src/mem/cache/compressors/dictionary_compressor_impl.hh](/src/mem/cache/compressors/dictionary_compressor_impl.hh) | C++ | 135 | 52 | 36 | 223 |
+| [src/mem/cache/compressors/fpcd.cc](/src/mem/cache/compressors/fpcd.cc) | C++ | 34 | 37 | 13 | 84 |
+| [src/mem/cache/compressors/fpcd.hh](/src/mem/cache/compressors/fpcd.hh) | C++ | 235 | 53 | 39 | 327 |
+| [src/mem/cache/compressors/multi.cc](/src/mem/cache/compressors/multi.cc) | C++ | 136 | 50 | 26 | 212 |
+| [src/mem/cache/compressors/multi.hh](/src/mem/cache/compressors/multi.hh) | C++ | 45 | 70 | 25 | 140 |
+| [src/mem/cache/compressors/perfect.cc](/src/mem/cache/compressors/perfect.cc) | C++ | 33 | 34 | 13 | 80 |
+| [src/mem/cache/compressors/perfect.hh](/src/mem/cache/compressors/perfect.hh) | C++ | 37 | 40 | 18 | 95 |
+| [src/mem/cache/compressors/repeated_qwords.cc](/src/mem/cache/compressors/repeated_qwords.cc) | C++ | 37 | 36 | 14 | 87 |
+| [src/mem/cache/compressors/repeated_qwords.hh](/src/mem/cache/compressors/repeated_qwords.hh) | C++ | 64 | 42 | 22 | 128 |
+| [src/mem/cache/compressors/zero.cc](/src/mem/cache/compressors/zero.cc) | C++ | 36 | 35 | 14 | 85 |
+| [src/mem/cache/compressors/zero.hh](/src/mem/cache/compressors/zero.hh) | C++ | 65 | 42 | 22 | 129 |
+| [src/mem/cache/mshr.cc](/src/mem/cache/mshr.cc) | C++ | 448 | 215 | 91 | 754 |
+| [src/mem/cache/mshr.hh](/src/mem/cache/mshr.hh) | C++ | 164 | 276 | 76 | 516 |
+| [src/mem/cache/mshr_queue.cc](/src/mem/cache/mshr_queue.cc) | C++ | 67 | 49 | 15 | 131 |
+| [src/mem/cache/mshr_queue.hh](/src/mem/cache/mshr_queue.hh) | C++ | 31 | 110 | 18 | 159 |
+| [src/mem/cache/noncoherent_cache.cc](/src/mem/cache/noncoherent_cache.cc) | C++ | 195 | 102 | 62 | 359 |
+| [src/mem/cache/noncoherent_cache.hh](/src/mem/cache/noncoherent_cache.hh) | C++ | 48 | 55 | 23 | 126 |
+| [src/mem/cache/prefetch/Prefetcher.py](/src/mem/cache/prefetch/Prefetcher.py) | Python | 419 | 50 | 59 | 528 |
+| [src/mem/cache/prefetch/access_map_pattern_matching.cc](/src/mem/cache/prefetch/access_map_pattern_matching.cc) | C++ | 195 | 58 | 26 | 279 |
+| [src/mem/cache/prefetch/access_map_pattern_matching.hh](/src/mem/cache/prefetch/access_map_pattern_matching.hh) | C++ | 87 | 97 | 22 | 206 |
+| [src/mem/cache/prefetch/associative_set.hh](/src/mem/cache/prefetch/associative_set.hh) | C++ | 81 | 133 | 26 | 240 |
+| [src/mem/cache/prefetch/associative_set_impl.hh](/src/mem/cache/prefetch/associative_set_impl.hh) | C++ | 84 | 29 | 14 | 127 |
+| [src/mem/cache/prefetch/base.cc](/src/mem/cache/prefetch/base.cc) | C++ | 177 | 52 | 33 | 262 |
+| [src/mem/cache/prefetch/base.hh](/src/mem/cache/prefetch/base.hh) | C++ | 156 | 169 | 61 | 386 |
+| [src/mem/cache/prefetch/bop.cc](/src/mem/cache/prefetch/bop.cc) | C++ | 186 | 45 | 39 | 270 |
+| [src/mem/cache/prefetch/bop.hh](/src/mem/cache/prefetch/bop.hh) | C++ | 58 | 72 | 30 | 160 |
+| [src/mem/cache/prefetch/delta_correlating_prediction_tables.cc](/src/mem/cache/prefetch/delta_correlating_prediction_tables.cc) | C++ | 112 | 41 | 20 | 173 |
+| [src/mem/cache/prefetch/delta_correlating_prediction_tables.hh](/src/mem/cache/prefetch/delta_correlating_prediction_tables.hh) | C++ | 44 | 71 | 20 | 135 |
+| [src/mem/cache/prefetch/indirect_memory.cc](/src/mem/cache/prefetch/indirect_memory.cc) | C++ | 186 | 59 | 19 | 264 |
+| [src/mem/cache/prefetch/indirect_memory.hh](/src/mem/cache/prefetch/indirect_memory.hh) | C++ | 88 | 92 | 26 | 206 |
+| [src/mem/cache/prefetch/irregular_stream_buffer.cc](/src/mem/cache/prefetch/irregular_stream_buffer.cc) | C++ | 155 | 47 | 16 | 218 |
+| [src/mem/cache/prefetch/irregular_stream_buffer.hh](/src/mem/cache/prefetch/irregular_stream_buffer.hh) | C++ | 55 | 68 | 17 | 140 |
+| [src/mem/cache/prefetch/multi.cc](/src/mem/cache/prefetch/multi.cc) | C++ | 40 | 36 | 13 | 89 |
+| [src/mem/cache/prefetch/multi.hh](/src/mem/cache/prefetch/multi.hh) | C++ | 20 | 43 | 11 | 74 |
+| [src/mem/cache/prefetch/pif.cc](/src/mem/cache/prefetch/pif.cc) | C++ | 166 | 56 | 31 | 253 |
+| [src/mem/cache/prefetch/pif.hh](/src/mem/cache/prefetch/pif.hh) | C++ | 62 | 107 | 24 | 193 |
+| [src/mem/cache/prefetch/queued.cc](/src/mem/cache/prefetch/queued.cc) | C++ | 346 | 98 | 42 | 486 |
+| [src/mem/cache/prefetch/queued.hh](/src/mem/cache/prefetch/queued.hh) | C++ | 98 | 117 | 41 | 256 |
+| [src/mem/cache/prefetch/sbooe.cc](/src/mem/cache/prefetch/sbooe.cc) | C++ | 83 | 35 | 24 | 142 |
+| [src/mem/cache/prefetch/sbooe.hh](/src/mem/cache/prefetch/sbooe.hh) | C++ | 54 | 77 | 32 | 163 |
+| [src/mem/cache/prefetch/signature_path.cc](/src/mem/cache/prefetch/signature_path.cc) | C++ | 231 | 58 | 37 | 326 |
+| [src/mem/cache/prefetch/signature_path.hh](/src/mem/cache/prefetch/signature_path.hh) | C++ | 102 | 163 | 27 | 292 |
+| [src/mem/cache/prefetch/signature_path_v2.cc](/src/mem/cache/prefetch/signature_path_v2.cc) | C++ | 90 | 32 | 16 | 138 |
+| [src/mem/cache/prefetch/signature_path_v2.hh](/src/mem/cache/prefetch/signature_path_v2.hh) | C++ | 40 | 44 | 16 | 100 |
+| [src/mem/cache/prefetch/slim_ampm.cc](/src/mem/cache/prefetch/slim_ampm.cc) | C++ | 22 | 27 | 8 | 57 |
+| [src/mem/cache/prefetch/slim_ampm.hh](/src/mem/cache/prefetch/slim_ampm.hh) | C++ | 19 | 38 | 10 | 67 |
+| [src/mem/cache/prefetch/spatio_temporal_memory_streaming.cc](/src/mem/cache/prefetch/spatio_temporal_memory_streaming.cc) | C++ | 177 | 56 | 23 | 256 |
+| [src/mem/cache/prefetch/spatio_temporal_memory_streaming.hh](/src/mem/cache/prefetch/spatio_temporal_memory_streaming.hh) | C++ | 89 | 92 | 24 | 205 |
+| [src/mem/cache/prefetch/stride.cc](/src/mem/cache/prefetch/stride.cc) | C++ | 124 | 59 | 33 | 216 |
+| [src/mem/cache/prefetch/stride.hh](/src/mem/cache/prefetch/stride.hh) | C++ | 71 | 67 | 25 | 163 |
+| [src/mem/cache/prefetch/tagged.cc](/src/mem/cache/prefetch/tagged.cc) | C++ | 23 | 31 | 11 | 65 |
+| [src/mem/cache/prefetch/tagged.hh](/src/mem/cache/prefetch/tagged.hh) | C++ | 18 | 31 | 11 | 60 |
+| [src/mem/cache/queue.hh](/src/mem/cache/queue.hh) | C++ | 129 | 105 | 27 | 261 |
+| [src/mem/cache/queue_entry.hh](/src/mem/cache/queue_entry.hh) | C++ | 42 | 101 | 25 | 168 |
+| [src/mem/cache/replacement_policies/ReplacementPolicies.py](/src/mem/cache/replacement_policies/ReplacementPolicies.py) | Python | 61 | 25 | 16 | 102 |
+| [src/mem/cache/replacement_policies/base.hh](/src/mem/cache/replacement_policies/base.hh) | C++ | 24 | 68 | 14 | 106 |
+| [src/mem/cache/replacement_policies/bip_rp.cc](/src/mem/cache/replacement_policies/bip_rp.cc) | C++ | 25 | 29 | 8 | 62 |
+| [src/mem/cache/replacement_policies/bip_rp.hh](/src/mem/cache/replacement_policies/bip_rp.hh) | C++ | 16 | 57 | 11 | 84 |
+| [src/mem/cache/replacement_policies/brrip_rp.cc](/src/mem/cache/replacement_policies/brrip_rp.cc) | C++ | 82 | 45 | 23 | 150 |
+| [src/mem/cache/replacement_policies/brrip_rp.hh](/src/mem/cache/replacement_policies/brrip_rp.hh) | C++ | 35 | 111 | 20 | 166 |
+| [src/mem/cache/replacement_policies/fifo_rp.cc](/src/mem/cache/replacement_policies/fifo_rp.cc) | C++ | 51 | 33 | 13 | 97 |
+| [src/mem/cache/replacement_policies/fifo_rp.hh](/src/mem/cache/replacement_policies/fifo_rp.hh) | C++ | 28 | 74 | 16 | 118 |
+| [src/mem/cache/replacement_policies/lfu_rp.cc](/src/mem/cache/replacement_policies/lfu_rp.cc) | C++ | 49 | 33 | 13 | 95 |
+| [src/mem/cache/replacement_policies/lfu_rp.hh](/src/mem/cache/replacement_policies/lfu_rp.hh) | C++ | 27 | 75 | 16 | 118 |
+| [src/mem/cache/replacement_policies/lru_rp.cc](/src/mem/cache/replacement_policies/lru_rp.cc) | C++ | 53 | 33 | 13 | 99 |
+| [src/mem/cache/replacement_policies/lru_rp.hh](/src/mem/cache/replacement_policies/lru_rp.hh) | C++ | 27 | 73 | 16 | 116 |
+| [src/mem/cache/replacement_policies/mru_rp.cc](/src/mem/cache/replacement_policies/mru_rp.cc) | C++ | 57 | 33 | 14 | 104 |
+| [src/mem/cache/replacement_policies/mru_rp.hh](/src/mem/cache/replacement_policies/mru_rp.hh) | C++ | 28 | 74 | 16 | 118 |
+| [src/mem/cache/replacement_policies/random_rp.cc](/src/mem/cache/replacement_policies/random_rp.cc) | C++ | 51 | 33 | 14 | 98 |
+| [src/mem/cache/replacement_policies/random_rp.hh](/src/mem/cache/replacement_policies/random_rp.hh) | C++ | 27 | 76 | 16 | 119 |
+| [src/mem/cache/replacement_policies/replaceable_entry.hh](/src/mem/cache/replacement_policies/replaceable_entry.hh) | C++ | 30 | 72 | 14 | 116 |
+| [src/mem/cache/replacement_policies/second_chance_rp.cc](/src/mem/cache/replacement_policies/second_chance_rp.cc) | C++ | 76 | 41 | 22 | 139 |
+| [src/mem/cache/replacement_policies/second_chance_rp.hh](/src/mem/cache/replacement_policies/second_chance_rp.hh) | C++ | 30 | 87 | 17 | 134 |
+| [src/mem/cache/replacement_policies/tree_plru_rp.cc](/src/mem/cache/replacement_policies/tree_plru_rp.cc) | C++ | 104 | 82 | 32 | 218 |
+| [src/mem/cache/replacement_policies/tree_plru_rp.hh](/src/mem/cache/replacement_policies/tree_plru_rp.hh) | C++ | 36 | 158 | 22 | 216 |
+| [src/mem/cache/replacement_policies/weighted_lru_rp.cc](/src/mem/cache/replacement_policies/weighted_lru_rp.cc) | C++ | 73 | 40 | 14 | 127 |
+| [src/mem/cache/replacement_policies/weighted_lru_rp.hh](/src/mem/cache/replacement_policies/weighted_lru_rp.hh) | C++ | 33 | 67 | 13 | 113 |
+| [src/mem/cache/tags/Tags.py](/src/mem/cache/tags/Tags.py) | Python | 49 | 52 | 26 | 127 |
+| [src/mem/cache/tags/base.cc](/src/mem/cache/tags/base.cc) | C++ | 182 | 53 | 44 | 279 |
+| [src/mem/cache/tags/base.hh](/src/mem/cache/tags/base.hh) | C++ | 99 | 207 | 51 | 357 |
+| [src/mem/cache/tags/base_set_assoc.cc](/src/mem/cache/tags/base_set_assoc.cc) | C++ | 35 | 52 | 15 | 102 |
+| [src/mem/cache/tags/base_set_assoc.hh](/src/mem/cache/tags/base_set_assoc.hh) | C++ | 92 | 124 | 33 | 249 |
+| [src/mem/cache/tags/compressed_tags.cc](/src/mem/cache/tags/compressed_tags.cc) | C++ | 120 | 62 | 32 | 214 |
+| [src/mem/cache/tags/compressed_tags.hh](/src/mem/cache/tags/compressed_tags.hh) | C++ | 26 | 101 | 16 | 143 |
+| [src/mem/cache/tags/fa_lru.cc](/src/mem/cache/tags/fa_lru.cc) | C++ | 299 | 85 | 70 | 454 |
+| [src/mem/cache/tags/fa_lru.hh](/src/mem/cache/tags/fa_lru.hh) | C++ | 124 | 223 | 46 | 393 |
+| [src/mem/cache/tags/indexing_policies/IndexingPolicies.py](/src/mem/cache/tags/indexing_policies/IndexingPolicies.py) | Python | 18 | 28 | 8 | 54 |
+| [src/mem/cache/tags/indexing_policies/base.cc](/src/mem/cache/tags/indexing_policies/base.cc) | C++ | 38 | 49 | 13 | 100 |
+| [src/mem/cache/tags/indexing_policies/base.hh](/src/mem/cache/tags/indexing_policies/base.hh) | C++ | 28 | 112 | 21 | 161 |
+| [src/mem/cache/tags/indexing_policies/set_associative.cc](/src/mem/cache/tags/indexing_policies/set_associative.cc) | C++ | 27 | 44 | 9 | 80 |
+| [src/mem/cache/tags/indexing_policies/set_associative.hh](/src/mem/cache/tags/indexing_policies/set_associative.hh) | C++ | 20 | 97 | 13 | 130 |
+| [src/mem/cache/tags/indexing_policies/skewed_associative.cc](/src/mem/cache/tags/indexing_policies/skewed_associative.cc) | C++ | 145 | 56 | 24 | 225 |
+| [src/mem/cache/tags/indexing_policies/skewed_associative.hh](/src/mem/cache/tags/indexing_policies/skewed_associative.hh) | C++ | 26 | 131 | 19 | 176 |
+| [src/mem/cache/tags/sector_blk.cc](/src/mem/cache/tags/sector_blk.cc) | C++ | 119 | 37 | 27 | 183 |
+| [src/mem/cache/tags/sector_blk.hh](/src/mem/cache/tags/sector_blk.hh) | C++ | 52 | 148 | 34 | 234 |
+| [src/mem/cache/tags/sector_tags.cc](/src/mem/cache/tags/sector_tags.cc) | C++ | 198 | 86 | 53 | 337 |
+| [src/mem/cache/tags/sector_tags.hh](/src/mem/cache/tags/sector_tags.hh) | C++ | 50 | 130 | 32 | 212 |
+| [src/mem/cache/tags/super_blk.cc](/src/mem/cache/tags/super_blk.cc) | C++ | 69 | 36 | 17 | 122 |
+| [src/mem/cache/tags/super_blk.hh](/src/mem/cache/tags/super_blk.hh) | C++ | 37 | 104 | 22 | 163 |
+| [src/mem/cache/write_queue.cc](/src/mem/cache/write_queue.cc) | C++ | 27 | 46 | 10 | 83 |
+| [src/mem/cache/write_queue.hh](/src/mem/cache/write_queue.hh) | C++ | 16 | 71 | 11 | 98 |
+| [src/mem/cache/write_queue_entry.cc](/src/mem/cache/write_queue_entry.cc) | C++ | 113 | 50 | 22 | 185 |
+| [src/mem/cache/write_queue_entry.hh](/src/mem/cache/write_queue_entry.hh) | C++ | 60 | 96 | 30 | 186 |
+
+[summary](results.md)

@@ -1,0 +1,150 @@
+Date : 2021-02-11 22:58:50
+Directory : /home/zl/gem5/src/mem/cache
+Total : 120 files,  13267 codes, 10572 comments, 3730 blanks, all 27569 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |        114 |     12,553 |     10,327 |      3,560 |     26,440 |
+| Python   |          6 |        714 |        245 |        170 |      1,129 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                        | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                           |        120 |     13,267 |     10,572 |      3,730 |     27,569 |
+| compressors                                                                 |         21 |      1,948 |      1,254 |        544 |      3,746 |
+| prefetch                                                                    |         35 |      3,958 |      2,350 |        887 |      7,195 |
+| replacement_policies                                                        |         23 |      1,023 |      1,419 |        373 |      2,815 |
+| tags                                                                        |         22 |      1,853 |      2,017 |        625 |      4,495 |
+| tags/indexing_policies                                                      |          7 |        302 |        517 |        107 |        926 |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                    | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/zl/gem5/src/mem/cache/Cache.py                                        | Python   |         63 |         63 |         31 |        157 |
+| /home/zl/gem5/src/mem/cache/base.cc                                         | C++      |      1,564 |        576 |        360 |      2,500 |
+| /home/zl/gem5/src/mem/cache/base.hh                                         | C++      |        480 |        731 |        209 |      1,420 |
+| /home/zl/gem5/src/mem/cache/cache.cc                                        | C++      |        724 |        522 |        192 |      1,438 |
+| /home/zl/gem5/src/mem/cache/cache.hh                                        | C++      |         53 |         88 |         31 |        172 |
+| /home/zl/gem5/src/mem/cache/cache_blk.cc                                    | C++      |         27 |         47 |         13 |         87 |
+| /home/zl/gem5/src/mem/cache/cache_blk.hh                                    | C++      |        234 |        229 |         55 |        518 |
+| /home/zl/gem5/src/mem/cache/compressors/Compressors.py                      | Python   |        104 |         27 |         30 |        161 |
+| /home/zl/gem5/src/mem/cache/compressors/base.cc                             | C++      |        157 |         52 |         39 |        248 |
+| /home/zl/gem5/src/mem/cache/compressors/base.hh                             | C++      |         61 |        153 |         39 |        253 |
+| /home/zl/gem5/src/mem/cache/compressors/base_delta.cc                       | C++      |         64 |         30 |         17 |        111 |
+| /home/zl/gem5/src/mem/cache/compressors/base_delta.hh                       | C++      |        124 |         55 |         30 |        209 |
+| /home/zl/gem5/src/mem/cache/compressors/base_delta_impl.hh                  | C++      |         52 |         39 |         16 |        107 |
+| /home/zl/gem5/src/mem/cache/compressors/base_dictionary_compressor.cc       | C++      |         28 |         32 |          9 |         69 |
+| /home/zl/gem5/src/mem/cache/compressors/cpack.cc                            | C++      |         30 |         34 |         13 |         77 |
+| /home/zl/gem5/src/mem/cache/compressors/cpack.hh                            | C++      |        102 |         49 |         28 |        179 |
+| /home/zl/gem5/src/mem/cache/compressors/dictionary_compressor.hh            | C++      |        369 |        292 |         81 |        742 |
+| /home/zl/gem5/src/mem/cache/compressors/dictionary_compressor_impl.hh       | C++      |        135 |         52 |         36 |        223 |
+| /home/zl/gem5/src/mem/cache/compressors/fpcd.cc                             | C++      |         34 |         37 |         13 |         84 |
+| /home/zl/gem5/src/mem/cache/compressors/fpcd.hh                             | C++      |        235 |         53 |         39 |        327 |
+| /home/zl/gem5/src/mem/cache/compressors/multi.cc                            | C++      |        136 |         50 |         26 |        212 |
+| /home/zl/gem5/src/mem/cache/compressors/multi.hh                            | C++      |         45 |         70 |         25 |        140 |
+| /home/zl/gem5/src/mem/cache/compressors/perfect.cc                          | C++      |         33 |         34 |         13 |         80 |
+| /home/zl/gem5/src/mem/cache/compressors/perfect.hh                          | C++      |         37 |         40 |         18 |         95 |
+| /home/zl/gem5/src/mem/cache/compressors/repeated_qwords.cc                  | C++      |         37 |         36 |         14 |         87 |
+| /home/zl/gem5/src/mem/cache/compressors/repeated_qwords.hh                  | C++      |         64 |         42 |         22 |        128 |
+| /home/zl/gem5/src/mem/cache/compressors/zero.cc                             | C++      |         36 |         35 |         14 |         85 |
+| /home/zl/gem5/src/mem/cache/compressors/zero.hh                             | C++      |         65 |         42 |         22 |        129 |
+| /home/zl/gem5/src/mem/cache/mshr.cc                                         | C++      |        448 |        215 |         91 |        754 |
+| /home/zl/gem5/src/mem/cache/mshr.hh                                         | C++      |        164 |        276 |         76 |        516 |
+| /home/zl/gem5/src/mem/cache/mshr_queue.cc                                   | C++      |         67 |         49 |         15 |        131 |
+| /home/zl/gem5/src/mem/cache/mshr_queue.hh                                   | C++      |         31 |        110 |         18 |        159 |
+| /home/zl/gem5/src/mem/cache/noncoherent_cache.cc                            | C++      |        195 |        102 |         62 |        359 |
+| /home/zl/gem5/src/mem/cache/noncoherent_cache.hh                            | C++      |         48 |         55 |         23 |        126 |
+| /home/zl/gem5/src/mem/cache/prefetch/Prefetcher.py                          | Python   |        419 |         50 |         59 |        528 |
+| /home/zl/gem5/src/mem/cache/prefetch/access_map_pattern_matching.cc         | C++      |        195 |         58 |         26 |        279 |
+| /home/zl/gem5/src/mem/cache/prefetch/access_map_pattern_matching.hh         | C++      |         87 |         97 |         22 |        206 |
+| /home/zl/gem5/src/mem/cache/prefetch/associative_set.hh                     | C++      |         81 |        133 |         26 |        240 |
+| /home/zl/gem5/src/mem/cache/prefetch/associative_set_impl.hh                | C++      |         84 |         29 |         14 |        127 |
+| /home/zl/gem5/src/mem/cache/prefetch/base.cc                                | C++      |        177 |         52 |         33 |        262 |
+| /home/zl/gem5/src/mem/cache/prefetch/base.hh                                | C++      |        156 |        169 |         61 |        386 |
+| /home/zl/gem5/src/mem/cache/prefetch/bop.cc                                 | C++      |        186 |         45 |         39 |        270 |
+| /home/zl/gem5/src/mem/cache/prefetch/bop.hh                                 | C++      |         58 |         72 |         30 |        160 |
+| /home/zl/gem5/src/mem/cache/prefetch/delta_correlating_prediction_tables.cc | C++      |        112 |         41 |         20 |        173 |
+| /home/zl/gem5/src/mem/cache/prefetch/delta_correlating_prediction_tables.hh | C++      |         44 |         71 |         20 |        135 |
+| /home/zl/gem5/src/mem/cache/prefetch/indirect_memory.cc                     | C++      |        186 |         59 |         19 |        264 |
+| /home/zl/gem5/src/mem/cache/prefetch/indirect_memory.hh                     | C++      |         88 |         92 |         26 |        206 |
+| /home/zl/gem5/src/mem/cache/prefetch/irregular_stream_buffer.cc             | C++      |        155 |         47 |         16 |        218 |
+| /home/zl/gem5/src/mem/cache/prefetch/irregular_stream_buffer.hh             | C++      |         55 |         68 |         17 |        140 |
+| /home/zl/gem5/src/mem/cache/prefetch/multi.cc                               | C++      |         40 |         36 |         13 |         89 |
+| /home/zl/gem5/src/mem/cache/prefetch/multi.hh                               | C++      |         20 |         43 |         11 |         74 |
+| /home/zl/gem5/src/mem/cache/prefetch/pif.cc                                 | C++      |        166 |         56 |         31 |        253 |
+| /home/zl/gem5/src/mem/cache/prefetch/pif.hh                                 | C++      |         62 |        107 |         24 |        193 |
+| /home/zl/gem5/src/mem/cache/prefetch/queued.cc                              | C++      |        346 |         98 |         42 |        486 |
+| /home/zl/gem5/src/mem/cache/prefetch/queued.hh                              | C++      |         98 |        117 |         41 |        256 |
+| /home/zl/gem5/src/mem/cache/prefetch/sbooe.cc                               | C++      |         83 |         35 |         24 |        142 |
+| /home/zl/gem5/src/mem/cache/prefetch/sbooe.hh                               | C++      |         54 |         77 |         32 |        163 |
+| /home/zl/gem5/src/mem/cache/prefetch/signature_path.cc                      | C++      |        231 |         58 |         37 |        326 |
+| /home/zl/gem5/src/mem/cache/prefetch/signature_path.hh                      | C++      |        102 |        163 |         27 |        292 |
+| /home/zl/gem5/src/mem/cache/prefetch/signature_path_v2.cc                   | C++      |         90 |         32 |         16 |        138 |
+| /home/zl/gem5/src/mem/cache/prefetch/signature_path_v2.hh                   | C++      |         40 |         44 |         16 |        100 |
+| /home/zl/gem5/src/mem/cache/prefetch/slim_ampm.cc                           | C++      |         22 |         27 |          8 |         57 |
+| /home/zl/gem5/src/mem/cache/prefetch/slim_ampm.hh                           | C++      |         19 |         38 |         10 |         67 |
+| /home/zl/gem5/src/mem/cache/prefetch/spatio_temporal_memory_streaming.cc    | C++      |        177 |         56 |         23 |        256 |
+| /home/zl/gem5/src/mem/cache/prefetch/spatio_temporal_memory_streaming.hh    | C++      |         89 |         92 |         24 |        205 |
+| /home/zl/gem5/src/mem/cache/prefetch/stride.cc                              | C++      |        124 |         59 |         33 |        216 |
+| /home/zl/gem5/src/mem/cache/prefetch/stride.hh                              | C++      |         71 |         67 |         25 |        163 |
+| /home/zl/gem5/src/mem/cache/prefetch/tagged.cc                              | C++      |         23 |         31 |         11 |         65 |
+| /home/zl/gem5/src/mem/cache/prefetch/tagged.hh                              | C++      |         18 |         31 |         11 |         60 |
+| /home/zl/gem5/src/mem/cache/queue.hh                                        | C++      |        129 |        105 |         27 |        261 |
+| /home/zl/gem5/src/mem/cache/queue_entry.hh                                  | C++      |         42 |        101 |         25 |        168 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/ReplacementPolicies.py     | Python   |         61 |         25 |         16 |        102 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/base.hh                    | C++      |         24 |         68 |         14 |        106 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/bip_rp.cc                  | C++      |         25 |         29 |          8 |         62 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/bip_rp.hh                  | C++      |         16 |         57 |         11 |         84 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/brrip_rp.cc                | C++      |         82 |         45 |         23 |        150 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/brrip_rp.hh                | C++      |         35 |        111 |         20 |        166 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/fifo_rp.cc                 | C++      |         51 |         33 |         13 |         97 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/fifo_rp.hh                 | C++      |         28 |         74 |         16 |        118 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/lfu_rp.cc                  | C++      |         49 |         33 |         13 |         95 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/lfu_rp.hh                  | C++      |         27 |         75 |         16 |        118 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/lru_rp.cc                  | C++      |         53 |         33 |         13 |         99 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/lru_rp.hh                  | C++      |         27 |         73 |         16 |        116 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/mru_rp.cc                  | C++      |         57 |         33 |         14 |        104 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/mru_rp.hh                  | C++      |         28 |         74 |         16 |        118 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/random_rp.cc               | C++      |         51 |         33 |         14 |         98 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/random_rp.hh               | C++      |         27 |         76 |         16 |        119 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/replaceable_entry.hh       | C++      |         30 |         72 |         14 |        116 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/second_chance_rp.cc        | C++      |         76 |         41 |         22 |        139 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/second_chance_rp.hh        | C++      |         30 |         87 |         17 |        134 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/tree_plru_rp.cc            | C++      |        104 |         82 |         32 |        218 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/tree_plru_rp.hh            | C++      |         36 |        158 |         22 |        216 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/weighted_lru_rp.cc         | C++      |         73 |         40 |         14 |        127 |
+| /home/zl/gem5/src/mem/cache/replacement_policies/weighted_lru_rp.hh         | C++      |         33 |         67 |         13 |        113 |
+| /home/zl/gem5/src/mem/cache/tags/Tags.py                                    | Python   |         49 |         52 |         26 |        127 |
+| /home/zl/gem5/src/mem/cache/tags/base.cc                                    | C++      |        182 |         53 |         44 |        279 |
+| /home/zl/gem5/src/mem/cache/tags/base.hh                                    | C++      |         99 |        207 |         51 |        357 |
+| /home/zl/gem5/src/mem/cache/tags/base_set_assoc.cc                          | C++      |         35 |         52 |         15 |        102 |
+| /home/zl/gem5/src/mem/cache/tags/base_set_assoc.hh                          | C++      |         92 |        124 |         33 |        249 |
+| /home/zl/gem5/src/mem/cache/tags/compressed_tags.cc                         | C++      |        120 |         62 |         32 |        214 |
+| /home/zl/gem5/src/mem/cache/tags/compressed_tags.hh                         | C++      |         26 |        101 |         16 |        143 |
+| /home/zl/gem5/src/mem/cache/tags/fa_lru.cc                                  | C++      |        299 |         85 |         70 |        454 |
+| /home/zl/gem5/src/mem/cache/tags/fa_lru.hh                                  | C++      |        124 |        223 |         46 |        393 |
+| /home/zl/gem5/src/mem/cache/tags/indexing_policies/IndexingPolicies.py      | Python   |         18 |         28 |          8 |         54 |
+| /home/zl/gem5/src/mem/cache/tags/indexing_policies/base.cc                  | C++      |         38 |         49 |         13 |        100 |
+| /home/zl/gem5/src/mem/cache/tags/indexing_policies/base.hh                  | C++      |         28 |        112 |         21 |        161 |
+| /home/zl/gem5/src/mem/cache/tags/indexing_policies/set_associative.cc       | C++      |         27 |         44 |          9 |         80 |
+| /home/zl/gem5/src/mem/cache/tags/indexing_policies/set_associative.hh       | C++      |         20 |         97 |         13 |        130 |
+| /home/zl/gem5/src/mem/cache/tags/indexing_policies/skewed_associative.cc    | C++      |        145 |         56 |         24 |        225 |
+| /home/zl/gem5/src/mem/cache/tags/indexing_policies/skewed_associative.hh    | C++      |         26 |        131 |         19 |        176 |
+| /home/zl/gem5/src/mem/cache/tags/sector_blk.cc                              | C++      |        119 |         37 |         27 |        183 |
+| /home/zl/gem5/src/mem/cache/tags/sector_blk.hh                              | C++      |         52 |        148 |         34 |        234 |
+| /home/zl/gem5/src/mem/cache/tags/sector_tags.cc                             | C++      |        198 |         86 |         53 |        337 |
+| /home/zl/gem5/src/mem/cache/tags/sector_tags.hh                             | C++      |         50 |        130 |         32 |        212 |
+| /home/zl/gem5/src/mem/cache/tags/super_blk.cc                               | C++      |         69 |         36 |         17 |        122 |
+| /home/zl/gem5/src/mem/cache/tags/super_blk.hh                               | C++      |         37 |        104 |         22 |        163 |
+| /home/zl/gem5/src/mem/cache/write_queue.cc                                  | C++      |         27 |         46 |         10 |         83 |
+| /home/zl/gem5/src/mem/cache/write_queue.hh                                  | C++      |         16 |         71 |         11 |         98 |
+| /home/zl/gem5/src/mem/cache/write_queue_entry.cc                            | C++      |        113 |         50 |         22 |        185 |
+| /home/zl/gem5/src/mem/cache/write_queue_entry.hh                            | C++      |         60 |         96 |         30 |        186 |
+| Total                                                                       |          |     13,267 |     10,572 |      3,730 |     27,569 |
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+

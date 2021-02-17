@@ -1,0 +1,94 @@
+Date : 2020-11-26 20:35:20
+Directory : /home/zl/gem5/src/gpu-compute
+Total : 69 files,  13208 codes, 5091 comments, 2922 blanks, all 21221 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         65 |     12,902 |      4,954 |      2,864 |     20,720 |
+| Python   |          4 |        306 |        137 |         58 |        501 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                            | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                               |         69 |     13,208 |      5,091 |      2,922 |     21,221 |
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                        | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/zl/gem5/src/gpu-compute/GPU.py                            | Python   |        183 |         38 |         34 |        255 |
+| /home/zl/gem5/src/gpu-compute/GPUStaticInstFlags.py             | Python   |         64 |         39 |         12 |        115 |
+| /home/zl/gem5/src/gpu-compute/LdsState.py                       | Python   |         14 |         30 |          4 |         48 |
+| /home/zl/gem5/src/gpu-compute/X86GPUTLB.py                      | Python   |         45 |         30 |          8 |         83 |
+| /home/zl/gem5/src/gpu-compute/comm.cc                           | C++      |         92 |         44 |         19 |        155 |
+| /home/zl/gem5/src/gpu-compute/comm.hh                           | C++      |         42 |         70 |         12 |        124 |
+| /home/zl/gem5/src/gpu-compute/compute_unit.cc                   | C++      |      1,941 |        297 |        415 |      2,653 |
+| /home/zl/gem5/src/gpu-compute/compute_unit.hh                   | C++      |        650 |        269 |        164 |      1,083 |
+| /home/zl/gem5/src/gpu-compute/dispatcher.cc                     | C++      |        207 |        105 |         56 |        368 |
+| /home/zl/gem5/src/gpu-compute/dispatcher.hh                     | C++      |         45 |         44 |         11 |        100 |
+| /home/zl/gem5/src/gpu-compute/exec_stage.cc                     | C++      |        197 |         41 |         25 |        263 |
+| /home/zl/gem5/src/gpu-compute/exec_stage.hh                     | C++      |         55 |         46 |         15 |        116 |
+| /home/zl/gem5/src/gpu-compute/fetch_stage.cc                    | C++      |         58 |         32 |         13 |        103 |
+| /home/zl/gem5/src/gpu-compute/fetch_stage.hh                    | C++      |         27 |         40 |         11 |         78 |
+| /home/zl/gem5/src/gpu-compute/fetch_unit.cc                     | C++      |        403 |        138 |         97 |        638 |
+| /home/zl/gem5/src/gpu-compute/fetch_unit.hh                     | C++      |        112 |        123 |         34 |        269 |
+| /home/zl/gem5/src/gpu-compute/global_memory_pipeline.cc         | C++      |        176 |         77 |         41 |        294 |
+| /home/zl/gem5/src/gpu-compute/global_memory_pipeline.hh         | C++      |         46 |         83 |         21 |        150 |
+| /home/zl/gem5/src/gpu-compute/gpu_command_processor.cc          | C++      |        100 |        101 |         29 |        230 |
+| /home/zl/gem5/src/gpu-compute/gpu_command_processor.hh          | C++      |         71 |         74 |         21 |        166 |
+| /home/zl/gem5/src/gpu-compute/gpu_compute_driver.cc             | C++      |        321 |         59 |         39 |        419 |
+| /home/zl/gem5/src/gpu-compute/gpu_compute_driver.hh             | C++      |         19 |         57 |          8 |         84 |
+| /home/zl/gem5/src/gpu-compute/gpu_dyn_inst.cc                   | C++      |        767 |        106 |        121 |        994 |
+| /home/zl/gem5/src/gpu-compute/gpu_dyn_inst.hh                   | C++      |        284 |         98 |         64 |        446 |
+| /home/zl/gem5/src/gpu-compute/gpu_exec_context.cc               | C++      |         28 |         32 |          7 |         67 |
+| /home/zl/gem5/src/gpu-compute/gpu_exec_context.hh               | C++      |         26 |         32 |          9 |         67 |
+| /home/zl/gem5/src/gpu-compute/gpu_static_inst.cc                | C++      |         84 |         32 |         14 |        130 |
+| /home/zl/gem5/src/gpu-compute/gpu_static_inst.hh                | C++      |        211 |         62 |         50 |        323 |
+| /home/zl/gem5/src/gpu-compute/gpu_tlb.cc                        | C++      |      1,014 |        236 |        274 |      1,524 |
+| /home/zl/gem5/src/gpu-compute/gpu_tlb.hh                        | C++      |        209 |        150 |         74 |        433 |
+| /home/zl/gem5/src/gpu-compute/hsa_queue_entry.hh                | C++      |        311 |        113 |         57 |        481 |
+| /home/zl/gem5/src/gpu-compute/kernel_code.hh                    | C++      |        116 |         65 |         12 |        193 |
+| /home/zl/gem5/src/gpu-compute/lds_state.cc                      | C++      |        193 |         97 |         41 |        331 |
+| /home/zl/gem5/src/gpu-compute/lds_state.hh                      | C++      |        328 |        116 |         95 |        539 |
+| /home/zl/gem5/src/gpu-compute/local_memory_pipeline.cc          | C++      |         76 |         38 |         22 |        136 |
+| /home/zl/gem5/src/gpu-compute/local_memory_pipeline.hh          | C++      |         42 |         43 |         16 |        101 |
+| /home/zl/gem5/src/gpu-compute/misc.hh                           | C++      |        110 |         39 |         26 |        175 |
+| /home/zl/gem5/src/gpu-compute/of_scheduling_policy.hh           | C++      |         34 |         36 |         11 |         81 |
+| /home/zl/gem5/src/gpu-compute/pool_manager.cc                   | C++      |          6 |         32 |          3 |         41 |
+| /home/zl/gem5/src/gpu-compute/pool_manager.hh                   | C++      |         25 |         35 |          9 |         69 |
+| /home/zl/gem5/src/gpu-compute/register_file.cc                  | C++      |        150 |         41 |         33 |        224 |
+| /home/zl/gem5/src/gpu-compute/register_file.hh                  | C++      |         73 |         72 |         27 |        172 |
+| /home/zl/gem5/src/gpu-compute/register_manager.cc               | C++      |         90 |         38 |         16 |        144 |
+| /home/zl/gem5/src/gpu-compute/register_manager.hh               | C++      |         36 |         42 |         17 |         95 |
+| /home/zl/gem5/src/gpu-compute/register_manager_policy.hh        | C++      |         23 |         51 |         13 |         87 |
+| /home/zl/gem5/src/gpu-compute/rr_scheduling_policy.hh           | C++      |         25 |         41 |          9 |         75 |
+| /home/zl/gem5/src/gpu-compute/scalar_memory_pipeline.cc         | C++      |         87 |         42 |         21 |        150 |
+| /home/zl/gem5/src/gpu-compute/scalar_memory_pipeline.hh         | C++      |         44 |         52 |         18 |        114 |
+| /home/zl/gem5/src/gpu-compute/scalar_register_file.cc           | C++      |        107 |         37 |         21 |        165 |
+| /home/zl/gem5/src/gpu-compute/scalar_register_file.hh           | C++      |         52 |         39 |         14 |        105 |
+| /home/zl/gem5/src/gpu-compute/schedule_stage.cc                 | C++      |        647 |        166 |         67 |        880 |
+| /home/zl/gem5/src/gpu-compute/schedule_stage.hh                 | C++      |        108 |         90 |         29 |        227 |
+| /home/zl/gem5/src/gpu-compute/scheduler.cc                      | C++      |         24 |         32 |          6 |         62 |
+| /home/zl/gem5/src/gpu-compute/scheduler.hh                      | C++      |         16 |         36 |          8 |         60 |
+| /home/zl/gem5/src/gpu-compute/scheduling_policy.hh              | C++      |         22 |         43 |          8 |         73 |
+| /home/zl/gem5/src/gpu-compute/scoreboard_check_stage.cc         | C++      |        177 |         88 |         20 |        285 |
+| /home/zl/gem5/src/gpu-compute/scoreboard_check_stage.hh         | C++      |         43 |         47 |         14 |        104 |
+| /home/zl/gem5/src/gpu-compute/shader.cc                         | C++      |        418 |         88 |         93 |        599 |
+| /home/zl/gem5/src/gpu-compute/shader.hh                         | C++      |        174 |         78 |         55 |        307 |
+| /home/zl/gem5/src/gpu-compute/simple_pool_manager.cc            | C++      |         63 |         34 |         14 |        111 |
+| /home/zl/gem5/src/gpu-compute/simple_pool_manager.hh            | C++      |         26 |         38 |          8 |         72 |
+| /home/zl/gem5/src/gpu-compute/static_register_manager_policy.cc | C++      |        120 |         42 |         27 |        189 |
+| /home/zl/gem5/src/gpu-compute/static_register_manager_policy.hh | C++      |         19 |         34 |         13 |         66 |
+| /home/zl/gem5/src/gpu-compute/tlb_coalescer.cc                  | C++      |        319 |        140 |        104 |        563 |
+| /home/zl/gem5/src/gpu-compute/tlb_coalescer.hh                  | C++      |         99 |         84 |         34 |        217 |
+| /home/zl/gem5/src/gpu-compute/vector_register_file.cc           | C++      |        146 |         49 |         21 |        216 |
+| /home/zl/gem5/src/gpu-compute/vector_register_file.hh           | C++      |         59 |         36 |         15 |        110 |
+| /home/zl/gem5/src/gpu-compute/wavefront.cc                      | C++      |      1,130 |        175 |        156 |      1,461 |
+| /home/zl/gem5/src/gpu-compute/wavefront.hh                      | C++      |        179 |        137 |         47 |        363 |
+| Total                                                           |          |     13,208 |      5,091 |      2,922 |     21,221 |
++-----------------------------------------------------------------+----------+------------+------------+------------+------------+

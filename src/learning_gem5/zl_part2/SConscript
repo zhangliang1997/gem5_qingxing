@@ -1,0 +1,14 @@
+Import('*')
+
+DebugFlag('zlzl')
+DebugFlag('ZLMemObject')
+DebugFlag('ZLCache')
+
+SimObject('ZlObject.py')
+Source('zl_object.cc')
+
+SimObject('ZLMemObject.py')
+Source('zl_mem_object.cc')
+
+SimObject('ZLCache.py')
+Source('zl_cache.cc')
