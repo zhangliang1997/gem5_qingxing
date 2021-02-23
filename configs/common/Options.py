@@ -322,7 +322,8 @@ def addCommonOptions(parser):
     parser.add_option("--work-cpus-checkpoint-count", action="store", type="int",
                       help="checkpoint and exit when active cpu count is reached")
     parser.add_option("--restore-with-cpu", action="store", type="choice",
-                      default="AtomicSimpleCPU",
+                      #default="AtomicSimpleCPU",
+                      default="DerivO3CPU", #zl modified
                       choices=ObjectList.cpu_list.get_names(),
                       help = "cpu type for restoring from a checkpoint")
 

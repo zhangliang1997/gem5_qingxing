@@ -185,6 +185,7 @@ def create_system(options, full_system, system, piobus = None, dma_ports = [],
     ruby.network = network
 
     protocol = buildEnv['PROTOCOL']
+    #print("zzzzzzzzzzzzzzzzzzzzzzzzzzzzz"+protocol)
     exec("from . import %s" % protocol)
     try:
         (cpu_sequencers, dir_cntrls, topology) = \

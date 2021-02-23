@@ -134,7 +134,8 @@ class BaseCache(ClockedObject):
     # cache a line is dropped for a mostly exclusive cache.
     clusivity = Param.Clusivity('mostly_incl',
                                 "Clusivity with upstream cache")
-
+    print("-------------------------")
+    print(clusivity)
     # The write allocator enables optimizations for streaming write
     # accesses by first coalescing writes and then avoiding allocation
     # in the current cache. Typically, this would be enabled in the

@@ -51,4 +51,49 @@ B: transition({IM_AD, SM_AD}, {DataDirNoAcks, DataOwner}, M) {
     popResponseQueue;
 }
 ```    
-when trigger DataDirNoAcks, how to choose between A and B
+when trigger DataDirNoAcks, how to choose between A and B  
+
+Q:  
+ scons build/ARM_MESI_Two_Level/gem.opt -j8  
+ Checking whether __x86_64__ is declared... (cached) yes
+Building in /home/zl/gem5/build/ARM_MESI_Two_Level
+Using saved variables file /home/zl/gem5/build/variables/ARM_MESI_Two_Level
+scons: done reading SConscript files.
+scons: Building targets ...
+scons: *** Do not know how to make File target `build/ARM_MESI_Two_Level/gem.opt' (/home/zl/gem5/build/ARM_MESI_Two_Level/gem.opt).  Stop.
+scons: building terminated because of errors.
+
+scons build/ARM_MESI_Two_Level/gem"5".opt -j8
+
+
+Q:TypeError: 'float' object cannot be interpreted as an integer
+assert (options.num_cpus % options.num_clusters == 0)
+    num_cpus_per_cluster = options.num_cpus // options.num_clusters
+
+    assert (options.num_l2caches % options.num_clusters == 0)
+    num_l2caches_per_cluster = options.num_l2caches // options.num_clusters
+
+s:'/'->'//'
+
+Q: push code to github
+
+
+s
+Script:  
+scons build/ARM_MESI_Two_Level/gem.opt -j8  
+scons build/ARM_MESI_Three_Level/gem.opt -j8
+./build/ARM/gem5.opt configs/example/se.py --help   
+build/ARM_MESI_Two_Level/gem5.opt configs/example/se.py -n 2 --cpu-type=TimingSimpleCPU  --ruby --caches --l1d_size=4kB --l1i_size=4kB --l2cache --l2_size=2MB -c 'tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello'  
+build/ARM_MESI_Two_Level/gem5.opt configs/example/se.py -n 8 --cpu-type=TimingSimpleCPU --ruby -c 'tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello'  
+
+build/ARM_MESI_Three_Level/gem5.opt configs/example/se.py -n 8 --num-clusters=2 --num-l2caches=2 --cpu-type=TimingSimpleCPU --ruby -c 'tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello;tests/test-progs/hello/bin/arm/linux/hello'  
+
+Firstly, we need to compile mesi_two_level cahche coherency protocol,   
+Secondly, we should study se.py script. se.py can set the number of cores.(number of cpu or core? we need to understand the real meaning of '-n'
+).
+ 
+To test multicore configuration, we need to prepare benchmark. 
+try to arm fs simulation  
+3. cache inclusive exclusive non-inclusive   
+https://blog.csdn.net/wyj7260/article/details/8515245  
+4. how to understand config of system?
