@@ -77,8 +77,6 @@ s:'/'->'//'
 
 Q: push code to github
 
-
-s
 Script:  
 scons build/ARM_MESI_Two_Level/gem.opt -j8  
 scons build/ARM_MESI_Three_Level/gem.opt -j8
@@ -91,9 +89,15 @@ build/ARM_MESI_Three_Level/gem5.opt configs/example/se.py -n 8 --num-clusters=2 
 Firstly, we need to compile mesi_two_level cahche coherency protocol,   
 Secondly, we should study se.py script. se.py can set the number of cores.(number of cpu or core? we need to understand the real meaning of '-n'
 ).
- 
+
 To test multicore configuration, we need to prepare benchmark. 
 try to arm fs simulation  
 3. cache inclusive exclusive non-inclusive   
 https://blog.csdn.net/wyj7260/article/details/8515245  
-4. how to understand config of system?
+4. how to understand config of system?  
+5. ./build/ARM/gem5.opt configs/example/arm/fs_bigLITTLE.py \
+    --caches \
+    --big-cpus=2 --little-cpus=2\
+    --bootloader="$IMG_ROOT/binaries/boot.arm64" \
+    --kernel="$IMG_ROOT/binaries/vmlinux.arm64" \
+    --disk="$IMG_ROOT/disks/linaro-minimal-aarch64.img"   
